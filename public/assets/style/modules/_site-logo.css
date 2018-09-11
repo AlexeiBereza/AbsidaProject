@@ -1,0 +1,12 @@
+.site-logo {
+
+    margin-top: .6rem;
+    border: 2px solid gray;
+    width: 20%;
+    height: 100%;
+
+    p {
+        font-size: 3rem;
+
+    }
+}
