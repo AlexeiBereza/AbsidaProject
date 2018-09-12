@@ -1,0 +1,15 @@
+.page-section {
+    width: 100%;
+    margin: 2rem 0;
+
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__dark {
+        background-color: $mainGray;
+    }
+}

@@ -1,0 +1,26 @@
+.about-us {
+    background: url('../public/assets/images/bridge-avarage3.jpeg') no-repeat center/cover;
+    padding: 2.3rem 0;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.55);
+
+    h3 {
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        color: rgb(34, 34, 34);
+        font-weight: 700;
+    }
+
+    p {
+        line-height: 1.5;
+        color: rgb(34, 34, 34);
+        font-weight: 600;
+    }
+
+    &__box {
+        width: 45%;
+        background-color: rgb(250, 250, 250, .65);
+        padding: 15px;
+        border-left: 4px $mainOrange solid;
+        border-radius: 2px 5px 5px 2px;
+    }
+}

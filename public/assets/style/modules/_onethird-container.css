@@ -1,0 +1,8 @@
+.onethird-container {
+    width: 27%;
+    border-top: 1px $mainGray solid;
+    border-right: 1px $mainGray solid;
+    border-bottom: 1px $mainGray solid;
+    height: 100%;
+    margin-top: 45px;
+}

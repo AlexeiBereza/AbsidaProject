@@ -1,4 +1,4 @@
-/node_modules/
-/gulp/
-/.vscode/
-/gitignore/
+node_modules
+gulp
+.vscode
+gitignore

@@ -1,0 +1,24 @@
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $mainGray;
+    padding: 3rem 0;
+    
+    ul {
+        padding-top: 1.1rem;
+    }
+
+    li {
+        color: $secondaryGray;
+        line-height: 1.8rem;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+}

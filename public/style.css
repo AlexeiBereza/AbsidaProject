@@ -14,6 +14,11 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit
+}
+
+h2 {
+    font-size: 20px;
 }
 
 .wrapper {
@@ -204,4 +209,236 @@ a {
         padding-right: 24px;
         padding-top: 4px;
         color: #edac15
+    }
+
+.page-section {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.page-section__flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+.page-section__dark {
+        background-color: rgba(0,0,0,.1);
+    }
+
+.section-title {
+    width: 380px;
+    color: #727171;
+    font-size: 25px;
+    border-bottom: 1px rgba(0,0,0,.1) solid;
+}
+
+.twothirds-container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 45px;
+}
+
+.twothirds-container__title {
+        position: absolute;
+        top: -45px;
+        z-index: 2;
+    }
+
+.onethird-container {
+    width: 27%;
+    border-top: 1px rgba(0,0,0,.1) solid;
+    border-right: 1px rgba(0,0,0,.1) solid;
+    border-bottom: 1px rgba(0,0,0,.1) solid;
+    height: 100%;
+    margin-top: 45px;
+}
+
+.news-box {
+    width: 48%;
+    border: 1px rgba(0,0,0,.1) solid;
+    border-radius: 2px 2px 0 0;
+}
+
+.news-box h2 {
+        margin-bottom: 1.5rem;
+    }
+
+.news-box h2 a {
+            color: black;  
+            transition: .2s ease-out; 
+        }
+
+.news-box h2 a:hover {
+            text-decoration: underline;
+            color: #3b3a3a;
+        }
+
+.news-box p {
+        line-height: 1.4;
+        color: #727171;
+        margin-bottom: 1.5rem;
+    }
+
+.news-box img {
+        width: 100%;
+        height: 190px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center;
+        border-bottom: 4px solid #edac15;
+        border-radius: 2px;
+    }
+
+.news-box__img {
+        position: relative;
+    }
+
+.news-box__date {
+        display: inline-block;
+        background-color: #edac15;
+        border-radius: 3px;
+        color: white;
+        padding: 6px;
+        position: absolute;
+        left: 25px;
+        bottom: -10px;
+    }
+
+.news-box__content {
+        padding: 2rem 2rem;
+    }
+
+.news-box .btn {
+        padding: 5px 5px 5px 0;
+    }
+
+.news-feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+
+
+}
+
+.news-feed a {
+        border-bottom: 1px rgba(0,0,0,.1) solid;
+    }
+
+.news-feed a:last-child {
+        border-bottom: none;
+    }
+
+.news-feed__box {
+        padding: 1.2rem;
+        border-left: 4px rgba(0,0,0,.1) solid;
+        transition: background-color .3s ease-out;
+    }
+
+.news-feed__box:hover {
+        border-left: 4px #edac15 solid;
+        background-color: rgba(0,0,0,.1);
+    }
+
+.news-feed__title {
+        font-size: 16px;
+        line-height: 1.3rem;
+        padding-bottom: 10px;
+        color: black;
+    }
+
+.news-feed__title:hover {
+        text-decoration: underline;
+    }
+
+.news-feed__date {
+        color: #727171;
+    }
+
+.btn__more {
+        font-weight: bold;
+        transition: .3s ease-out;
+        color: #6574fd;
+    }
+
+.btn__more:hover {
+        color: #0921fc;
+        text-decoration: underline;
+    }
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,.1);
+    padding: 3rem 0;
+}
+
+.main-footer ul {
+        padding-top: 1.1rem;
+    }
+
+.main-footer li {
+        color: #727171;
+        line-height: 1.8rem;
+    }
+
+.main-footer a:hover {
+        text-decoration: underline;
+    }
+
+.main-footer i {
+        margin-right: 10px;
+    }
+
+.partner-images {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.partner-images img {
+        width: 100%;
+        height: 110px;
+        -o-object-fit: contain;
+           object-fit: contain;
+        -o-object-position: center;
+           object-position: center;
+        border: 1px solid rgba(0,0,0,.1);
+    }
+
+.partner-images__box {
+        width: 18%;
+    }
+
+.about-us {
+    background: url('../public/assets/images/bridge-avarage3.jpeg') no-repeat center/cover;
+    padding: 2.3rem 0;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.55);
+}
+
+.about-us h3 {
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        color: rgb(34, 34, 34);
+        font-weight: 700;
+    }
+
+.about-us p {
+        line-height: 1.5;
+        color: rgb(34, 34, 34);
+        font-weight: 600;
+    }
+
+.about-us__box {
+        width: 45%;
+        background-color: rgb(250, 250, 250, .65);
+        padding: 15px;
+        border-left: 4px #edac15 solid;
+        border-radius: 2px 5px 5px 2px;
     }
