@@ -10,22 +10,24 @@
     <title>Официальный сайт компании Абсида</title>
 </head>
 <body>
-    <header class="site-header wrapper">
-        <div class="site-logo">
-            <p class="site-logo__img">Site logo</p>
+    <header>
+        <div class="site-header wrapper">
+            <div class="site-logo">
+                <p class="site-logo__img">Site logo</p>
+            </div>
+            <nav class="primary-nav">
+                <ul class="primary-nav__contact">
+
+                </ul>
+                <ul class="primary-nav__list">
+                    <li><a href="./index.html"><i class="fas fa-home primary-nav__home"></i></a></li>
+                    <li class="primary-nav__item"><a href="./page-about.html">О нас</a></li>
+                    <li class="primary-nav__item"><a href="./page-news.html">Новости</a></li>
+                    <li class="primary-nav__item"><a href="./page-service.html">Услуги</a></li>
+                    <li class="primary-nav__item"><a href="./page-contact.html">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="primary-nav">
-                
-            <ul class="primary-nav__list">
-                <li><a href="#"><i class="fas fa-home primary-nav__home"></i></a></li>
-                <li class="primary-nav__item"><a href="#">О нас</a></li>
-                <li class="primary-nav__item"><a href="#">Новости</a></li>
-                <li class="primary-nav__item"><a href="#">Проекты</a></li>
-                <li class="primary-nav__item"><a href="#">Услуги</a></li>
-                <li class="primary-nav__item"><a href="#">Контакты</a></li>
-                <li class="primary-nav__item"><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
     </header>
     <div class="large-hero">
         <div class="large-hero__motto">
@@ -65,7 +67,7 @@
                 <h2 class="twothirds-container__title section-title">Последние проекты</h2>
                 <div class="news-box">
                     <div class="news-box__img">
-                        <img src="assets/images/bridge-small1.jpeg" alt="">
+                        <img src="images/bridge-small1.jpeg" alt="">
                         <span class="news-box__date">23 июня 2018</span>
                     </div>
                     <div class="news-box__content">
@@ -76,7 +78,7 @@
                 </div>
                 <div class="news-box">
                     <div class="news-box__img">
-                        <img src="assets/images/bridge-small2.jpeg" alt="">
+                        <img src="images/bridge-small2.jpeg" alt="">
                         <span class="news-box__date">5 августа 2018</span>
                     </div>
                     <div class="news-box__content">
@@ -112,7 +114,7 @@
                             <span class="news-feed__date">30.09.2011</span>
                         </div>
                     </a>
-                    <a class="btn btn__more" href="#">
+                    <a class="btn btn__more" href="./page-news.html">
                         <div class="news-feed__box">
                             Все новости >
                         </div>
@@ -142,19 +144,19 @@
             <h2 class="section-title">Наши клиенты</h2>
             <div class="partner-images page-section__flex">
                 <div class="partner-images__box">
-                    <img src="assets/images/logos/logo1.jpg" alt="">
+                    <img src="images/logos/logo1.jpg" alt="">
                 </div>
                 <div class="partner-images__box">
-                <img src="assets/images/logos/logo2.jpg" alt="">
+                <img src="images/logos/logo2.jpg" alt="">
                 </div>
                 <div class="partner-images__box">
-                <img src="assets/images/logos/logo3.jpg" alt="">
+                <img src="images/logos/logo3.jpg" alt="">
                 </div>
                 <div class="partner-images__box">
-                <img src="assets/images/logos/logo4.jpg" alt="">
+                <img src="images/logos/logo4.jpg" alt="">
                 </div>
                 <div class="partner-images__box">
-                <img src="assets/images/logos/logo5.png" alt="">
+                <img src="images/logos/logo5.png" alt="">
                 </div>
             </div>
         </div>
@@ -163,35 +165,37 @@
 
     <footer>
         <div class="main-footer">
-            <div class="main-footer__logo">
-                <p>Site Logo</p>
-            </div>
-            <div class="main-footer__links">
-                    <h3>Ссылки</h3>
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Проекты</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                </ul>
-            </div>
-            <div class="main-footer__links">
-                    <h3>Наши Услуги</h3>
-                <ul>
-                    <li><a href="#">Проектировка</a></li>
-                    <li><a href="#">Производство</a></li>
-                    <li><a href="#">Lorem, ipsum.</a></li>
-                    <li><a href="#">Lorem, ipsum.</a></li>
-                </ul>
-            </div>
-            <div class="main-footer__links">
-                    <h3>Наши Контакты</h3>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i>Локация: г.Москва...</li>
-                    <li><i class="fas fa-phone"></i>Телефон: 8-800-333-44-55</li>
-                    <li><i class="fas fa-envelope"></i>E-mail: absida@company.com</li>
-                    <li><i class="far fa-clock"></i>Время работы: Пн - Пт: 9:00 - 18:00</li>
-                </ul>
+            <div class="wrapper main-footer__flex">
+                <div class="main-footer__logo">
+                    <p>Site Logo</p>
+                </div>
+                <div class="main-footer__links">
+                        <h3>Ссылки</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Главная</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Проекты</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>О нас</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="main-footer__links">
+                        <h3>Наши Услуги</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Проектировка</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Производство</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Lorem, ipsum.</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Lorem, ipsum.</a></li>
+                    </ul>
+                </div>
+                <div class="main-footer__links">
+                        <h3>Наши Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>Локация: г.Москва...</li>
+                        <li><i class="fas fa-phone"></i>Телефон: 8-800-333-44-55</li>
+                        <li><i class="fas fa-envelope"></i>E-mail: absida@company.com</li>
+                        <li><i class="far fa-clock"></i>Время работы: Пн - Пт: 9:00 - 18:00</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
