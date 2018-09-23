@@ -1,0 +1,30 @@
+.page-section {
+    width: 100%;
+    margin: 1rem 0;
+
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__dark {
+        background-color: $mainGray;
+    }
+
+    &__no-margin {
+        margin: 0;
+    }
+
+    &__large-margin {
+        margin: 2rem 0;
+
+        @mixin atLarge {
+            margin: 4rem 0;
+            
+        }
+        
+
+    }
+}

@@ -1,0 +1,52 @@
+.site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    transition: .5s ease-out;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 10;
+
+    @mixin atMedium {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    &__menu-icon {
+        width: 20px;
+        height: 19px;
+        position: absolute;
+        z-index: 10;
+        top: 10px;
+        right: -35px;
+        transition: .3s ease-out;
+
+        span {
+            font-size: 36px;
+            color: $mainOrange;
+            font-weight: bold;
+        }
+
+        @mixin atMedium {
+            display: none;
+        }
+    }
+}
+
+.site-header__x {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 36px;
+    color: $secondaryGray;
+    z-index: 15;
+
+    @mixin atMedium {
+        display: none;
+    }
+}

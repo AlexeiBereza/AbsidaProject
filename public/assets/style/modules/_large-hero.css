@@ -1,0 +1,145 @@
+.large-hero {
+    /*background: url('./images/bridge-stone.jpg') no-repeat center/cover;*/
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    z-index: 9;
+
+    @mixin atMedium {
+        margin-top: 4rem;
+        height: 70vh;
+        
+    }
+
+    @mixin atLarge {
+        height: 80vh;
+    }
+
+    img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        object-position: center;
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @mixin atMedium {
+            height: 70vh;
+
+        }
+
+        @mixin atLarge {
+            height: 80vh;
+        }
+    }
+
+    h4 {
+        color: $mainOrange;
+        font-weight: 200;
+        font-size: 15px;
+        text-shadow: 1px 1px 1px rgb(32, 32, 32);
+
+        
+    }
+
+    span {
+        font-weight: 500;
+        color: rgb(231, 229, 229);
+        line-height: 2;
+        text-shadow: 1px 1px 1px rgb(32, 32, 32);
+    }
+
+    &__motto {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 6rem 1.5rem;
+        z-index: 10;
+        text-align: justify;
+        transition: .3s ease-out;
+
+        @mixin atMedium {
+            position: relative;
+            width: 65%;
+            padding-top: 3rem;
+            text-align: left;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+
+        }
+        
+
+        h2 {
+            color: white;
+            font-size: 20px;
+            text-shadow: 1px 1px 6px rgb(0, 0, 0);
+
+            @mixin atMedium {
+                font-size: 24px;
+    
+            }
+            @mixin atLarge {
+                font-size: 36px;
+    
+            }
+        }
+
+        p {
+            color: #eee;
+            font-size: 20px;
+            margin-top: 1rem;
+            line-height: 1.8rem;
+        }
+    }
+
+    &__info {
+        border-top: 1px solid rgba(250,250,250,.15);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: none;
+
+        @mixin atMedium {
+            display: block;
+        }
+    }
+
+    &__info-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem;
+        height: 100%;
+        border-right: 1px solid rgba(250,250,250,.15);
+
+        @mixin atLarge {
+            padding: 2.2rem 2rem;
+
+        }
+        
+    }
+
+    &__box:last-child {
+        border-right: none;
+    }
+    i {
+        font-size: 32px;
+        padding-right: 24px;
+        padding-top: 4px;
+        color: $mainOrange;
+    }
+
+}

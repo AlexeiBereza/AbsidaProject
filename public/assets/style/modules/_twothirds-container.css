@@ -1,0 +1,25 @@
+.twothirds-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 45px;
+    flex: 0 1 100%;
+
+    @mixin atMedium {
+        flex: 0 1 100%;
+
+    }
+
+    @mixin atLarge {
+        
+        flex: 0 1 70%;
+    }
+
+    &__title {
+        position: absolute;
+        top: -45px;
+        z-index: 2;
+    }
+}

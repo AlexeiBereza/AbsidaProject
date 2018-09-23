@@ -1,0 +1,57 @@
+.news-feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    text-align: justify;
+
+    @mixin atLarge {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+
+    a {
+        border-bottom: 1px $mainGray solid;
+
+        &:last-child {
+
+            @mixin atMedium {
+                display: none;
+            }
+        }
+    }
+
+    a:last-child {
+        border-bottom: none;
+    }
+
+    &__box {
+        padding: 1.2rem;
+        border-left: 4px $mainGray solid;
+        transition: background-color .3s ease-out;
+    }
+
+    &__box:hover {
+        border-left: 4px $mainOrange solid;
+        background-color: $mainGray;
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 1.3rem;
+        padding-bottom: 10px;
+        color: black;
+    }
+
+    &__title:hover {
+        text-decoration: underline;
+    }
+
+    &__date {
+        color: $secondaryGray;
+    }
+
+
+
+}

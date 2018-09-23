@@ -1,0 +1,207 @@
+.contact-page {
+
+
+    &__info {
+        flex: 0 0 100%;
+        padding-top: 1.5rem;
+
+        img {
+            width: 60%;
+            height: auto;
+            display: block;
+            margin: 0 auto 2rem;
+            border: 1px black solid;
+        }
+
+        @mixin atMedium {
+            flex: 0 0 30%;
+            padding-top: 3.5rem;
+
+        }
+    }
+
+    &__info-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #fff;
+        border: 1px $mainGray solid;
+        border-top: 3px $mainOrange solid;
+
+        
+        @mixin atSmall {
+            flex-direction: row;
+
+        }
+
+        @mixin atMedium {
+            flex-direction: column;
+
+        }
+
+    }
+
+    &__info-logo {
+        width: 50%;
+    }
+
+
+
+    &__info-item {
+        flex: 0 0 100%;
+        width: 100%;
+
+        span {
+            border-bottom: 1px $mainGray solid;
+            width: 80%;
+            display: block;
+            margin: auto;
+            text-align: left;
+            padding: 1.5rem 0;
+            color: $secondaryGray;
+            font-size: 14px;
+
+            @mixin atSmall {
+                text-align: center;
+            }
+            @mixin atMedium {
+                text-align: left;
+            }
+
+            
+        }
+
+        @mixin atSmall {
+            flex: 0 0 49%;
+        }
+        @mixin atMedium {
+            flex: 0 0 30%;
+            
+        }
+        @mixin atLarge {
+            flex: 0 0 100%;
+
+        }
+
+        
+        i {
+            padding-right: 1.5rem;
+            color: $mainOrange;
+        }
+
+        .no-bottom-border {
+            border-bottom: none;
+        }
+
+    }
+
+    &__info-item:nth-child(3) span {
+
+        @mixin atSmall {
+            border-bottom: none;
+
+        }
+
+        @mixin atLarge {
+            border-bottom: 1px $mainGray solid;
+        }
+    }
+
+    &__form {
+        flex: 0 0 100%;
+        margin-top: 1.4rem;
+
+        @mixin atMedium {
+            flex: 0 0 67%;
+            
+        }
+        @mixin atLarge {
+            flex: 0 0 65%;
+
+        }
+
+        input {
+            display: block;
+            transition: all .3s;
+            margin: 1rem 0;
+
+            @mixin atLarge {
+                margin: 1.6rem 1.6rem 1.6rem 0;
+
+            }
+        }
+
+        input, textarea {
+            border: 1px $mainGray solid;
+            padding: .5rem;
+            font-size: 1.4rem;
+            width: 100%;
+            border-radius: 3px;
+
+            @mixin atLarge {
+                font-size: 15px;
+            }
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 3px black;
+        }
+
+        textarea {
+            height: 200px;
+            resize: none;
+
+            @mixin atLarge {
+                margin: 3.9rem 0 0 0;
+                height: 70%;
+            }
+        }
+    }
+
+    &__form-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+
+        @mixin atLarge {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__form-col {
+        flex: 0 0 100%;
+
+        @mixin atSmall {
+        flex: 0 0 45%;
+            
+        }
+
+        @mixin atLarge {
+            flex: 0 0 45%;
+
+        }
+    }
+
+    &__form-submit {
+        
+        
+        @mixin atLarge {
+            flex: 0 0 49%;
+            margin: 0;
+        }
+    }
+
+    .yandex-map {
+        height: 350px;
+        margin-top: 1px;
+
+        @mixin atMedium {
+            height: 500px;
+
+        }
+    }
+}

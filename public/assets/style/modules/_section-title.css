@@ -1,0 +1,11 @@
+.section-title {
+    width: 250px;
+    color: $secondaryGray;
+    font-size: 25px;
+    border-bottom: 1px $mainGray solid;
+
+    @mixin atMedium {
+        width: 350px;
+        
+    }
+}

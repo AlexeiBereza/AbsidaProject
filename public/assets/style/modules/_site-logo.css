@@ -1,0 +1,18 @@
+.site-logo {
+    margin-top: .5rem;
+    width: 80%;
+    height: auto;
+    transition: .4s;
+    z-index: 10;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @mixin atMedium {
+        width: 25%;
+    }
+}

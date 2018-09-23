@@ -1,0 +1,153 @@
+.news-page {
+
+    h2 {
+        margin: .3rem 0;
+        font-size: 1rem;
+
+
+        @mixin atMedium {
+            font-size: 2rem;
+            margin: .3rem 0 1.5rem 0;
+
+        }
+    }
+
+    p {
+        line-height: 1.3;
+        margin: .3rem 0;
+        color: $secondaryGray;
+        font-size: .8rem;
+
+        @mixin atMedium {
+            font-size: 1rem;
+            margin: .6rem 0;
+            line-height: 1.4;
+
+        }
+    }
+
+    span {
+        color: $secondaryGray;
+        font-size: .7rem;
+
+        @mixin atMedium {
+            font-size: 1rem;
+
+        }
+    }
+
+    &__img-highlight {
+        transition: opacity .2s ease-out;
+    }
+    &__img-highlight:hover {
+        opacity: .85;
+    }
+
+    &__title-highlight {
+        transition: color .2s ease-out;
+    }
+    &__title-highlight:hover {
+        color: $mainOrange;
+    }
+
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        justify-content: space-between;
+
+        @mixin atMedium {
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+        }
+
+
+        @mixin atLarge {
+            flex: 0 0 70%;
+        }
+    }
+
+    &__box {
+        flex: 0 0 100%;
+        border-left: 4px $mainGray solid;
+        transition: border .2s ease-out;
+        border-top: 1px $mainGray solid;
+        border-bottom: 1px $mainGray solid;
+        border-left: 4px $mainOrange solid;
+        border-right: 1px $mainGray solid;
+        margin-bottom: 3rem;
+        background-color: #fff;
+
+        @mixin atSmall {
+            flex: 0 0 49%;
+        }
+        @mixin atMedium {
+            flex: 0 0 auto;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+
+            @mixin atSmall {
+                height: 150px;
+            }
+            @mixin atMedium {
+                height: 350px;
+            }
+        }
+        
+    }
+
+    &__box:last-child {
+        margin-bottom: 0;
+    }
+
+    &__box-single {
+
+        @mixin atSmall {
+            flex: 0 0 100%;
+            
+        }
+
+        img {
+            height: 200px;
+
+            @mixin atSmall {
+                height: 350px;
+
+            }
+        }
+    }
+
+    &__box-highlight {
+        border-left: 4px $mainGray solid;
+    }
+
+    &__box-highlight:hover {
+        border-left: 4px $mainOrange solid;
+    }
+
+    &__box-content {
+        padding: .5rem 1rem;
+        text-align: justify;
+
+        @mixin atMedium {
+            padding: 1rem 2rem;
+
+        }
+    }
+
+    &__box-content-date {
+        font-weight: 700;
+    }
+
+    
+
+    
+}

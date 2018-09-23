@@ -1,0 +1,34 @@
+.onethird-container {
+    border-top: 1px $mainGray solid;
+    border-right: 1px $mainGray solid;
+    border-bottom: 1px $mainGray solid;
+    background-color: #fff;
+    height: 100%;
+    margin-top: 1rem;
+    flex: 0 1 100%;
+    display: none;
+
+    @mixin atMedium {
+        display: block;
+        flex: 0 1 100%;
+
+    }
+
+    @mixin atLarge {
+        flex: 0 1 280px;
+        margin-top: 45px;
+    }
+
+    &__no-margin-top {
+        margin-top: 0;
+    }
+
+    &__only-large {
+        display: none;
+
+        @mixin atLarge {
+            display: block;
+
+        }
+    }
+}

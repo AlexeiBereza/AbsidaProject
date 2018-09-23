@@ -1,0 +1,44 @@
+.page-head {
+    width: 100%;
+    background: url('images/header-img.jpg') top;
+
+    @mixin atMedium {
+        padding-top: 4.3rem;
+
+    }
+
+    &__title {
+        margin: 4rem 0 0 0;
+        text-align: left;
+
+        @mixin atMedium {
+            margin: 2rem 0;
+        }
+    }
+
+    &__navigation {
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 1px $mainGray solid;
+        border-top: 1px $mainGray solid;
+        box-shadow: 0 1px 1px $mainGray;
+        text-align: left;
+    }
+
+    &__navigation-box {
+        margin: .3rem 0;
+        font-weight: 200;
+
+        i {
+            margin: 0 .6rem 0 .9rem;
+        }
+
+        a {
+            transition: color .2s ease-out;
+        }
+
+        a:hover {
+            color: $mainOrange;
+        }
+    }
+}

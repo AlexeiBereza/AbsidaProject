@@ -1,0 +1,51 @@
+.primary-nav {
+
+    width: 60%;
+
+    a {
+        color: #999999;
+        font-weight: 200;
+        font-size: 1.8rem;
+        transition: color .2s ease-out;
+
+        @mixin atMedium {
+            font-size: 15px;
+        }
+    }
+    
+    a:hover {
+        color: $mainOrange;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        li {
+            display: block;
+            margin: 0 1rem;
+            padding: 1rem 0;
+        }
+
+        @mixin atMedium {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+
+    &__home {
+        font-size: 30px;
+        margin-right: 0px;
+        padding: 5px 25px 5px 0;
+
+        @mixin atMedium {
+            border-right: 1px solid rgba(0,0,0,.1);
+            font-size: 20px;
+        }
+    }
+
+}

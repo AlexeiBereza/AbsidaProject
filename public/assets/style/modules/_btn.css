@@ -1,0 +1,22 @@
+.btn {
+
+
+    &__more {
+        font-weight: bold;
+        transition: .3s ease-out;
+        color: #6574fd;
+    }
+
+    &__more:hover {
+        color: #0921fc;
+        text-decoration: underline;
+    }
+
+    &__orange {
+        background-color: $mainOrange;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+
+}

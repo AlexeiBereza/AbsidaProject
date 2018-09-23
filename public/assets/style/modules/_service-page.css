@@ -1,0 +1,66 @@
+.service-page {
+    
+
+
+    h3 {
+        padding: 0 0 .8rem 0;
+    }
+
+    p {
+        line-height: 1.3;
+        text-align: justify;
+        padding-bottom: 1rem;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+
+    &__box {
+        flex: 0 0 100%;
+        margin-bottom: 1.2rem;
+        background-color: #fff;
+        border: 1px $mainGray solid;
+        border-radius: 3px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 4px solid $mainOrange;
+
+            @mixin atMedium {
+                height: 250px;
+
+            }
+            @mixin atLarge {
+                height: 200px;
+
+            }
+        }
+
+        @mixin atSmall {
+            flex: 0 0 49%;
+
+        }
+        @mixin atMedium {
+            flex: 0 0 32%;
+
+        }
+        @mixin atLarge {
+            flex: 0 0 24%;
+
+        }
+    }
+
+    &__box-text {
+        padding: 1rem;
+
+    }
+}
