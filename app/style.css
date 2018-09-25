@@ -689,6 +689,13 @@ h2 {
         }
     }
 
+@media (min-width: 1130px) {
+
+.news-feed a:last-child {
+                display: block
+        }
+    }
+
 .news-feed a:last-child {
         border-bottom: none;
     }

@@ -19,6 +19,10 @@
             @mixin atMedium {
                 display: none;
             }
+
+            @mixin atLarge {
+                display: block;
+            }
         }
     }
 
