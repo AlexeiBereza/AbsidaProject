@@ -14,7 +14,7 @@ function scrollFunction() {
   }
 }
 
-let icon = document.querySelector('.site-header__menu-icon');
+let icon = document.querySelector('.mobile-board__menu-icon');
 let icon_x = document.getElementById('site-header__x');
 let header = document.querySelector('header');
 let main = document.querySelector('main');
@@ -26,12 +26,12 @@ icon_x.addEventListener('click', sideBarShrink);
 function sideBarExpand() {
     header.style.left = "0";
     icon.style.opacity = "0";
-    main.style.right = "-250px";
+    main.style.right = "-350px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function sideBarShrink() {
-    header.style.left = "-250px";
+    header.style.left = "-350px";
     icon.style.opacity = "1";
     main.style.right = "0";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
