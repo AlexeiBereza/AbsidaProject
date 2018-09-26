@@ -8,18 +8,19 @@ header {
     position: fixed;
     z-index: 99999;
     top: 0;
-    background-color: white;
+    background-color: #171717;
     box-shadow: 0 1px 3px rgba(0,0,0,.2);
     height: 100%;
-    width: 250px;
+    width: 350px;
     transition: .5s ease-out;
-    left: -250px;
+    left: -350px;
     z-index: 10;
 
     @mixin atMedium {
         width: 100%;
         height: auto;
         left: 0;
+        background-color: #fff;
     }
 }
 

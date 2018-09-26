@@ -21,38 +21,107 @@
 
     &__company-info {
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
         justify-content: space-between;
+
+        @mixin atMedium {
+            flex-direction: row;
+        }
     }
 
     &__bio {
-        width: 100%;
+        flex-basis: 100%;
         text-align: justify;
 
         @mixin atMedium {
-            width: 48%;
+            flex-basis: 65%;
+        }
+        @mixin atLarge {
+            flex-basis: 75%;
         }
     }
 
-    &__img {
-        width: 48%;
-        display: none;
-
-        img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            object-position: center;
-
-        }
+    &__side-menu {
+        flex-basis: 30%;
+        background-color: #fff;
+        border-top: 1px $mainGray solid;
+        align-self: flex-start;
+        margin-bottom: 2rem;
 
         @mixin atMedium {
+            border-right: 1px $mainGray solid;
+            margin-bottom: 0;
+            margin-top: 3rem;
+
+        }
+
+        @mixin atLarge {
+            flex-basis: 20%;
+
+        }
+
+        img {
             display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 1px $mainGray solid; 
+
+            @mixin atMedium {
+                border-left: 4px $mainGray solid;
+
+            }
+        }
+        .active {
+
+            @mixin atMedium {
+                border-left: 4px $mainOrange solid;
+
+            }
         }
     }
 
+
+    &__side-menu-list {
+        width: 100%;
+
+        li {
+            border-bottom: 1px $mainGray solid;
+            transition: border, color .2s ease-out;
+
+            @mixin atMedium {
+                border-left: 4px $mainGray solid;
+
+            }
+        }
+
+        a {
+            display: block;
+            padding: 1rem;
+        }
+
+        li:hover {
+            @mixin atMedium {
+                border-left: 4px $mainOrange solid;
+                color: $mainOrange;
+            }
+        }
+
+        
+    }
+
+
     &__team {
-        margin-top: 3rem;
+        width: 100%;
+
+        @mixin atMedium {
+            width: 65%;
+            
+        }
+        @mixin atLarge {
+            width: 75%;
+        }
     }
 
     &__team-title {
@@ -83,11 +152,11 @@
 
         }
         @mixin atMedium {
-            flex-basis: 32%;
+            flex-basis: 49%;
 
         }
         @mixin atLarge {
-            flex-basis: 23%;
+            flex-basis: 32%;
 
         }
         

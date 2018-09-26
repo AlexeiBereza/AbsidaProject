@@ -11,9 +11,6 @@
 </head>
 <body>
     <header>
-        <div class="site-header__menu-icon">
-            <span>&#9776</span>
-        </div>
         <div id="site-header__x" class="site-header__x">
             <span>&times;</span>
         </div>
@@ -21,12 +18,23 @@
             <div class="site-logo">
                 <a href="./index.html"><img src="images/absida-logo-narrow.jpg" class="site-logo__img"></a>
             </div>
+            
+            <div class="site-header__mobile-widget">
+                <div class="site-header__mobile-widget-box">
+                    <ul>
+                        <li><i class="fas fa-phone"></i><p>8-800-333-44-55</p></li>
+                    </ul>
+                </div>
+                <div class="site-header__mobile-widget-box">
+                    <ul>
+                        <li><i class="fas fa-envelope"></i><p>absida@company.com</p></li>
+                    </ul>
+                </div>
+            </div>
+    
             <nav class="primary-nav">
-                <ul class="primary-nav__contact">
-
-                </ul>
                 <ul class="primary-nav__list">
-                    <li><a href="./index.html"><i class="fas fa-home primary-nav__home"></i></a></li>
+                    <li class="primary-nav__item"><a href="./index.html">Главная</i></a></li>
                     <li class="primary-nav__item"><a href="./page-about.html">О нас</a></li>
                     <li class="primary-nav__item"><a href="./page-news.html">Новости</a></li>
                     <li class="primary-nav__item"><a href="./page-service.html">Услуги</a></li>
@@ -36,6 +44,15 @@
         </div>
     </header>
     <main>
+
+        <div class="mobile-board">
+            <a href="./index.html"><img src="images/absida-logo-narrow.jpg" class="site-logo__img"></a>
+            
+            <div class="mobile-board__menu-icon">
+                <span>&#9776</span>
+            </div>
+        </div>
+
         <div class="page-head">
             <div class="wrapper">
                 <h1 class="page-head__title">Керченский Мост построен!</h1>
@@ -66,39 +83,49 @@
                     </div>
                 </div>
 
-                <div class="onethird-container onethird-container__no-margin-top">
-                    <div class="news-feed">
-                        <a href="#">
-                            <div class="news-feed__box">
-                                <h3 class="news-feed__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                                <span class="news-feed__date">13.04.2018</span>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="news-feed__box">
-                                <h3 class="news-feed__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                                <span class="news-feed__date">25.08.2016</span>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="news-feed__box">
-                                <h3 class="news-feed__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                                <span class="news-feed__date">02.01.2016</span>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="news-feed__box">
-                                <h3 class="news-feed__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                                <span class="news-feed__date">30.09.2011</span>
-                            </div>
-                        </a>
-                        <a class="btn btn__more" href="./page-news.html">
-                            <div class="news-feed__box">
-                                Все новости >
-                            </div>
-                        </a>
+                <div class="onethird-container onethird-container__no-margin-top onethird-container__only-large">
+                        <ul class="news-feed">
+                            <li>
+                                <a href="#">
+                                    <div class="news-feed__box">
+                                        <h3 class="news-feed__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                                        <span class="news-feed__date">13.04.2018</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="news-feed__box">
+                                        <h3 class="news-feed__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                                        <span class="news-feed__date">25.08.2016</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="news-feed__box">
+                                        <h3 class="news-feed__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                                        <span class="news-feed__date">02.01.2016</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="news-feed__box">
+                                        <h3 class="news-feed__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                                        <span class="news-feed__date">30.09.2011</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn__more" href="./page-news.html">
+                                    <div class="news-feed__box">
+                                        Все новости >
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
                 
             </div>
         </div>

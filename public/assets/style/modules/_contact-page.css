@@ -16,6 +16,7 @@
         @mixin atMedium {
             flex: 0 0 30%;
             padding-top: 3.5rem;
+            margin-bottom: 2.5rem;
 
         }
     }
@@ -133,31 +134,46 @@
         }
 
         input, textarea {
-            border: 1px $mainGray solid;
             padding: .5rem;
             font-size: 1.4rem;
             width: 100%;
-            border-radius: 3px;
 
             @mixin atLarge {
                 font-size: 15px;
             }
         }
 
-        input:focus, textarea:focus {
+        input:focus {
             outline: none;
-            box-shadow: 0 0 3px black;
+            border-bottom: 1px rgba(0, 0, 0, .3) solid;
+        }
+
+        textarea:focus {
+            outline: none;
+            border: 1px rgba(0, 0, 0, .3) solid;
+            
         }
 
         textarea {
             height: 200px;
             resize: none;
+            background-color: transparent;
+            border: 1px $mainGray solid;
 
             @mixin atLarge {
                 margin: 3.9rem 0 0 0;
                 height: 70%;
             }
         }
+    }
+
+    &__form-input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px $mainGray solid;
+        background-color: transparent;
+
     }
 
     &__form-flex {
@@ -187,7 +203,7 @@
     }
 
     &__form-submit {
-        
+        border: none;
         
         @mixin atLarge {
             flex: 0 0 49%;

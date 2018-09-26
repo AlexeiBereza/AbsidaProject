@@ -4,6 +4,7 @@
     height: auto;
     transition: .4s;
     z-index: 10;
+    display: none;
 
     img {
         width: 100%;
@@ -14,5 +15,6 @@
 
     @mixin atMedium {
         width: 25%;
+        display: block;
     }
 }

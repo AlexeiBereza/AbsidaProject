@@ -1,5 +1,5 @@
 .section-title {
-    width: 250px;
+    width: 100%;
     color: $secondaryGray;
     font-size: 25px;
     border-bottom: 1px $mainGray solid;

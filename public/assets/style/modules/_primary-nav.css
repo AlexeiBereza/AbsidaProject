@@ -1,15 +1,20 @@
 .primary-nav {
+    width: 100%;
 
-    width: 60%;
+    @mixin atMedium {
+    }
 
     a {
-        color: #999999;
-        font-weight: 200;
-        font-size: 1.8rem;
+        color: #fff;
+        font-weight: 100;
+        font-size: 1.3rem;
         transition: color .2s ease-out;
+        text-transform: uppercase;
 
         @mixin atMedium {
             font-size: 15px;
+            color: #999999;
+            text-transform: none;
         }
     }
     
@@ -22,11 +27,21 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        width: 90%;
+        margin-top: .2rem;
         
         li {
             display: block;
             margin: 0 1rem;
-            padding: 1rem 0;
+            padding: 1.3rem 0 .3rem;
+            border-bottom: 1px #fff solid;
+            width: 100%;
+
+            @mixin atMedium {
+                border: none;
+                width: auto;
+                padding: 1rem 0;
+            }
         }
 
         @mixin atMedium {
@@ -34,6 +49,8 @@
             flex-direction: row;
             align-items: center;
             justify-content: flex-end;
+            width: auto;
+            margin-top: 0;
         }
     }
 
