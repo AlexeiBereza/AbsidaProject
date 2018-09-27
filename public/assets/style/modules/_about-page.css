@@ -1,6 +1,4 @@
 .about-page {
-
-
     
     p {
         line-height: 1.4;
@@ -183,5 +181,13 @@
     &__team-plate-content {
         padding: 1.5rem 1.4rem .5rem;
         text-align: justify;
+    }
+
+
+    .current_page_item {
+        @mixin atMedium {
+                border-left: 4px $mainOrange solid;
+                color: $mainOrange;
+        }        
     }
 }
