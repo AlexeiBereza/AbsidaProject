@@ -79,7 +79,7 @@
                         <i class="far fa-clock"></i>
                         <div class="large-hero__box-text">
                             <h4>Время работы:</h4>
-                            <span>Пн - Пт: 9:00 - 18:00</span>
+                            <span>Пн - Пт: 9:00 - 18:00</span><span>Сб - Вс: выходные дни</span>
                         </div>
                     </div>
                     <div class="large-hero__box">
@@ -156,22 +156,31 @@
             </div>
         </div>
 
-        <div class="page-section page-section__dark about-us ">
+        <!-- <div class="page-section page-section__dark about-us ">
             <div class="wrapper page-section__flex">
                 <div class="about-us__box">
                     <h3>О нашей компании</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae possimus totam numquam a praesentium iure quaerat quos, nulla officia veniam delectus, quo, voluptatibus molestiae!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugiat doloribus minus tempore pariatur enim tenetur eveniet eum repellendus, perferendis delectus dolor eos minima. Deleniti saepe voluptatum architecto, voluptas alias odit, consectetur sit nobis corporis quas pariatur libero, quasi nostrum.</p>
+                    <p>Компания ООО «ППП «АБСИДА» успешно работает с 2006 года. За свою многолетнюю практику реализовано множество проектов в сфере изысканий, строительства, проектирования автодорог и мостов, а также надземных пешеходных переходов.В организации сформировался высококвалифицированный коллектив, нацеленный на успех путем использования современных технологий в строительстве и применения рациональныхтехнических решений на стадии разработки технической документации. На предприятии трудятся все возрастные категории работников: от опытных, состоявшихся специалистов до молодых выпускников средних специальных и высших учебных заведений, что создает преемственность поколений на долгие годы.</p>
                 </div>
                 <div class="about-us__box">
-                    <h3>Наши преимущества</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae possimus totam numquam a praesentium iure quaerat quos, nulla officia veniam delectus, quo, voluptatibus molestiae!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugiat doloribus minus tempore pariatur enim tenetur eveniet eum repellendus, perferendis delectus dolor eos minima. Deleniti saepe voluptatum architecto, voluptas alias odit, consectetur sit nobis corporis quas pariatur libero, quasi nostrum.</p>
+                    <h3>Наши ценности:</h3>
+                    <ul class="about-us__list">
+                        <li>- Профессионализм</li>
+                        <li>- Стремление к совершенству</li>
+                        <li>- Индивидуальный подход к заказчику</li>
+                        <li>- Комплексные решения</li>
+                        <li>- Конфиденциальность</li>
+                        <li>- Уважение</li>
+                        <li>- Порядочность</li>
+                        <li>- Ответственность</li>
+                        <li>- Командность</li>
+                        <li>- Креативность</li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="page-section">
+        <!-- <div class="page-section">
             <div class="wrapper">
                 <h2 class="section-title">Наши заказчики</h2>
                 <div class="partner-images page-section__flex">
@@ -192,7 +201,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
 
     <footer>
@@ -204,27 +213,29 @@
                 <div class="main-footer__links">
                         <h3>Ссылки</h3>
                     <ul>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Главная</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Проекты</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>О нас</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Отзывы</a></li>
+                        <li><a href="<?php echo site_url(); ?>"><i class="fas fa-angle-right"></i>Главная</a></li>
+                        <li><a href="<?php echo site_url('/about-us'); ?>"><i class="fas fa-angle-right"></i>О нас</a></li>
+                        <li><a href="<?php echo get_post_type_archive_link('news'); ?>"><i class="fas fa-angle-right"></i>Новости</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Услуги</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Контакты</a></li>
                     </ul>
                 </div>
                 <div class="main-footer__links">
                         <h3>Наши Услуги</h3>
                     <ul>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Проектировка</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Производство</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Lorem, ipsum.</a></li>
-                        <li><a href="#"><i class="fas fa-angle-right"></i>Lorem, ipsum.</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Изыскание</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Обследование</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Проектирование</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Строительно-монтажные работы</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Авторский надзор</a></li>
                     </ul>
                 </div>
                 <div class="main-footer__links">
                         <h3>Наши Контакты</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i>Локация: г.Москва...</li>
-                        <li><i class="fas fa-phone"></i>Телефон: 8-800-333-44-55</li>
-                        <li><i class="fas fa-envelope"></i>E-mail: absida@company.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Локация:  г. Москва, ул. Нагорная, д.16, корп.3</li>
+                        <li><i class="fas fa-phone"></i>Телефон: +7 (499) 123-96-18</li>
+                        <li><i class="fas fa-envelope"></i>E-mail: pppabsida@mail.ru</li>
                         <li><i class="far fa-clock"></i>Время работы: Пн - Пт: 9:00 - 18:00</li>
                     </ul>
                 </div>

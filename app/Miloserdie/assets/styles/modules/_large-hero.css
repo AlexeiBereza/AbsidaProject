@@ -1,0 +1,130 @@
+.large-hero {
+    border-bottom: 2px solid black;
+    background-image: url("./assets/images/logo1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 350px;
+
+
+    @mixin atSmall {
+        height: 450px;
+    }
+
+    @mixin atMedium {
+        height: 650px;
+    }
+
+    
+      
+      #slider{
+        overflow: hidden;
+        height: 100%;
+      }
+      
+      #slider figure img{
+        height: 100%;
+        width: 20%;
+        float: left;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      #slider figure{
+        position: absolute;
+        height: 100%;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 45s slider infinite;
+      }
+
+
+    &__text-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        padding-bottom: 150px;
+
+        @mixin atMedium {
+            padding-bottom: 0;
+        }
+    }
+    &__title {
+        font-weight: 300;
+        color: $mainBlue;
+        font-size: 2.4rem;
+        margin: 0;
+
+        @mixin atSmall {
+            font-size: 4.8rem;
+        }
+    }
+    &__subtitle {
+        font-weight: 300;
+        color: $mainBlue;
+        font-size: 1.5rem;
+        margin: 0;
+
+        @mixin atSmall {
+            font-size: 2.9rem;
+        }
+    }
+    &__description {
+        color: #FFF;
+        font-size: 1.1rem;
+        font-weight: 100;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atSmall {
+            font-size: 1.875rem;
+        }
+    }
+}
+
+@keyframes slider {
+    0%{
+      left: 0;
+    }
+    15%{
+      left: 0;
+    }
+    20%{
+      left: -100%;
+    }
+    35%{
+      left: -100%;
+    }
+    40%{
+      left: -200%;
+    }
+    55%{
+      left: -200%;
+    }
+    60%{
+      left: -300%;
+    }
+    75%{
+      left: -300%;
+    }
+    80%{
+      left: -400%;
+    }
+    95%{
+        left: -400%;
+    }
+    100%{
+        left: -400%;
+    }
+    100%{
+        left: 0%;
+    }
+  }

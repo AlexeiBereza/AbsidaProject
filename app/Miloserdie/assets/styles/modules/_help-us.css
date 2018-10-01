@@ -1,0 +1,129 @@
+.help-us {
+    position: relative;
+    background-color: $mainLightBlue;
+    padding-bottom: 3rem;
+
+    span {
+        font-weight: bold;
+    }
+
+    &__content {
+        background-color: #FFF;
+        padding-bottom: 3rem;
+        margin-top: 3rem;
+        border-radius: 10px;
+
+        @mixin atSmall {
+            box-shadow: 5px 10px 15px rgba(70, 61, 61, 0.5);
+        }
+    }
+
+    &__container {
+        margin-left: 1.2rem;
+    }
+
+
+    &__section-title {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        
+        @mixin atMedium { 
+            width: 55%;
+        }
+        
+        @mixin clearfix;
+    }
+
+    &__main-title {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+
+        @mixin atMedium {
+            float: left;
+            margin-top: 35px;
+        }
+
+    }
+
+    &__title-icon {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        width: 80px;
+        height: 80px;
+        top: 25px;
+
+        @mixin atMedium {
+            display: block;
+            float: left;
+            top: 45px;
+        }
+    }
+
+    &__img {
+        float: left;
+        width: 50px;
+        height: 50px;
+    }
+
+    &__description {
+        margin-left: 75px;
+
+        @mixin atMedium {
+            position: relative;
+            min-height: 235px;
+            padding-bottom: 25px;
+            .btn {
+                position: absolute;
+                bottom: 0;
+                left: 0px;
+            }
+        }
+        @mixin atLarge {
+            min-height: 200px;
+        }
+
+    }
+
+    &__tab {
+        span {
+            font-weight: bold;
+        }
+
+        
+    }
+
+    &__tab-content {
+        margin: .8rem auto;
+        padding: .1rem 1rem 1.2rem;
+        max-width: 600px;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    &__tab-text {
+        margin-top: 2rem;
+
+        p {
+            margin: .6rem;
+        }
+    }
+
+    &__ul {
+        list-style: none;
+        padding-left: 0;
+        margin: .6rem;
+
+        li {
+            margin: .3em 0;
+        }
+    }
+    
+}

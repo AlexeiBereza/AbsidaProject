@@ -1,0 +1,32 @@
+.soft-container {
+    
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: #f8f9fa;
+    border-radius: .25rem;
+    padding: 5px 25px 20px 25px;
+
+    @mixin atSmall {
+        width: 75%;
+    }
+    @mixin atMedium {
+        width: 65%;
+    }
+    @mixin atLarge {
+        width: 50%;
+    }
+
+    &-large {
+
+        @mixin atSmall {
+            width: 95%;
+        }
+        @mixin atMedium {
+            width: 95%;
+        }
+        @mixin atLarge {
+            width: 95%;
+        }
+    }
+}

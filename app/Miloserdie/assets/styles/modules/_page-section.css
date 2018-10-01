@@ -1,0 +1,44 @@
+.page-section {
+    padding: 1.2rem 0;
+
+    @mixin atMedium {
+        padding: 1rem 0;
+    }
+
+    &--no-b-padding-until-medium {
+        padding-bottom: 0;
+
+        @mixin atMedium {
+            padding-bottom: 4.5rem;
+        }
+    }
+
+    &--no-b-padding-until-large {
+        padding-bottom: 0;
+        
+        @mixin atLarge {
+            padding-bottom: 4.5rem;
+        }
+    }
+
+    &--blue {
+        background-color: $mainBlue;
+        color: #FFF;
+    }
+
+    &__testimonials {
+        background-color: #e0e6ef;
+        padding-bottom: 50px;
+
+        @mixin atLarge {
+            background-color: rgba(#e0e6ef, 1);
+        }
+        
+    }
+
+    &__our-children {
+        background-color: #FFF;
+        padding-bottom: 50px;
+        
+    }
+}

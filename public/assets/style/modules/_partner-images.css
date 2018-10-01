@@ -1,8 +1,13 @@
 .partner-images {
     width: 100%;
-    padding-top: 2rem;
+    height: 100%;
+    padding-bottom: 2rem;
 
-    img {
+    @mixin atLarge {
+        padding-bottom: .5rem;
+    }
+
+    /*img {
         width: 100%;
         height: 110px;
         object-fit: contain;
@@ -22,5 +27,5 @@
             padding: 0;
 
         }
-    }
+    }*/
 }

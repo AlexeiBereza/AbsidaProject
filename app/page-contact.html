@@ -67,44 +67,48 @@
             </div>
         </div>
         
-        <div class="page-section page-section__no-margin contact-page">
-            <div class="yandex-map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad8d2cb1156bced3bd199fd3cfeb535de1405a3b014b95ddb9e0c557a54ef3cb9&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
-            </div>
+        <div class="page-section contact-page">
             <div class="wrapper page-section__flex">
-
+            
+                <div class="yandex-map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad8d2cb1156bced3bd199fd3cfeb535de1405a3b014b95ddb9e0c557a54ef3cb9&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
                 <div class="contact-page__info">
                     <div class="contact-page__info-container">
                         
                         <div class="contact-page__info-item">
-                            <span><i class="fas fa-map-marker-alt"></i>г.Москва, ул.Нагорная, 16к3</span>
+                            <i class="fas fa-map-marker-alt"></i><span>г. Москва, ул. Нагорная, д.16, корп.3</span>
                         </div>
                         <div class="contact-page__info-item">
-                            <span><i class="fas fa-phone"></i>8-800-333-44-55</span>
+                            <i class="fas fa-phone"></i><span>8-800-333-44-55</span>
                         </div>
                         <div class="contact-page__info-item">
-                            <span><i class="fas fa-envelope"></i>absida@company.com</span>
+                            <i class="fas fa-envelope"></i><span>absida@company.com</span>
                         </div>
                         <div class="contact-page__info-item">
-                        <span class="no-bottom-border"><i class="far fa-clock"></i>Пн - Пт: 9:00 - 18:00</span>
+                        <i class="far fa-clock"></i><span class="no-bottom-border">Пн - Пт: 9:00 - 18:00<br>Сб - Вс: выходные дни</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="contact-page__form">
-                    <form action="" class="contact-page__form-flex">
-                        <div class="contact-page__form-col">
-                            <h2 class="section-title">Свяжитесь с нами</h2>
-                            <input type="text" id="name" placeholder="Ваше Имя" class="contact-page__form-input">
-                            <input type="email" id="email" placeholder="Ваш E-mail" class="contact-page__form-input">
-                            <input type="phone" id="phone" placeholder="Ваш телефон" class="contact-page__form-input">
-                        </div>
-                        <div class="contact-page__form-col">
-                            <textarea name="message" id="message" placeholder="Сообщение" class="contact-page__form-textarea"></textarea>
-                        </div>
-                        <input type="submit" id="submit" class="btn btn__orange contact-page__form-submit" value="Отправить">
-                    </form>
-                </div>
+            </div>
+            <div class="contact-page__form wrapper">
+            <p class="contact-page__result-message contact-page__result-message-success">Ваше сообщение удачно отправлено!</p>
+                <form action="" class="contact-page__form-flex" method="POST">
+                    <div class="contact-page__form-col">
+                        <h2 class="section-title">Свяжитесь с нами</h2>
+                        <input type="text" id="name" name="user_name" placeholder="Ваше Имя*" class="contact-page__form-input" required>
+                        <input type="email" id="email" name="user_email" placeholder="Ваш E-mail*" class="contact-page__form-input" required>
+                        <input type="phone" id="phone" name="user_phone" placeholder="Ваш телефон" class="contact-page__form-input">
+                    </div>
+                    <div class="contact-page__form-col">
+                        <textarea name="user_message" id="message" placeholder="Сообщение*" class="contact-page__form-textarea"></textarea>
+                    </div>
+                    <div class="checkbox-control">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">Даю согласие на <a href="#">обработку персональных данных</a></label>
+                    </div>
+                    <input type="submit" id="submit" name="submit_btn" class="btn btn__orange contact-page__form-submit" value="Отправить" required>
+                </form>
             </div>
         </div>
     </main>
