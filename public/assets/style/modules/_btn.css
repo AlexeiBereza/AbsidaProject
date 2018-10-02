@@ -19,4 +19,11 @@
         cursor: pointer;
     }
 
+    &__blue {
+        background-color: #2B65AE;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+
 }

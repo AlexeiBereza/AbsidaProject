@@ -2,19 +2,18 @@
     width: 100%;
 
     @mixin atMedium {
+        background-color: #171717;
     }
 
     a {
         color: #fff;
-        font-weight: 100;
+        font-weight: 400;
         font-size: 1.3rem;
         transition: color .2s ease-out;
         text-transform: uppercase;
 
         @mixin atMedium {
-            font-size: 15px;
-            color: #999999;
-            text-transform: none;
+            font-size: 14px;
         }
     }
     
@@ -36,11 +35,12 @@
             padding: 1.3rem 0 .3rem;
             border-bottom: 1px #fff solid;
             width: 100%;
+            position: relative;
 
             @mixin atMedium {
                 border: none;
                 width: auto;
-                padding: 1rem 0;
+                padding: .3rem 0;
             }
         }
 
@@ -48,9 +48,47 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: flex-end;
-            width: auto;
+            justify-content: space-around;
+            width: 70%;
             margin-top: 0;
+            margin: 0 auto;
+        }
+    }
+
+    &__dropdown {
+        background-color: #171717;
+        position: absolute;
+        color: #fff;
+        left: 0;
+        top: 100%;
+        list-style: none;
+        display: none;
+        transition: .5s ease-out;
+        white-space: nowrap;
+
+        li {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            display: block;
+        }
+
+        li:last-child {
+            padding-bottom: 8px;
+        }
+
+        a {
+            padding: 0 10px;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+
+        @mixin atMedium {
+            display: block;
         }
     }
 

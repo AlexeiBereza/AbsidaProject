@@ -167,7 +167,7 @@ h2 {
     position: relative;
     overflow-x: hidden;
     z-index: 10;
-
+    height: auto;
     
 }
 
@@ -179,8 +179,8 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
-        align-items: center
-
+        align-items: center;
+        flex-wrap: wrap
     
 }
     }
@@ -201,7 +201,10 @@ h2 {
 
 
 .site-header__mobile-widget {
-            display: none
+            width: auto;
+            margin-top: 0;
+            font-size: 15px;
+            margin-left: auto
 
     }
     }
@@ -213,6 +216,17 @@ h2 {
         border-radius: 3px;
         margin: 5px;
         width: 90%;
+    }
+
+
+@media (min-width: 800px) {
+
+
+.site-header__mobile-widget-box {
+            border: none;
+            margin: 0;
+            width: 100%
+    }
     }
 
 
@@ -230,15 +244,68 @@ h2 {
         }
 
 
+@media (min-width: 800px) {
+
+
+.site-header__mobile-widget-box i, .site-header__mobile-widget-box p {
+                padding: 3px
+        }
+    }
+
+
 .site-header__mobile-widget-box i {
             border-right: 1px #727171 solid;
             font-size: 12px;
         }
 
 
+@media (min-width: 800px) {
+
+
+.site-header__mobile-widget-box i {
+                font-size: 12px;
+                color: #edac15;
+                border-right: none;
+                padding-right: 8px
+        }
+    }
+
+
 .site-header__mobile-widget-box p {
             color: #edac15;
         }
+
+
+@media (min-width: 800px) {
+
+
+.site-header__mobile-widget--invisible-medium {
+            display: none
+    }
+    }
+
+
+.site-header__btn {
+        padding: 8px 10px;
+        justify-self: flex-end;
+        margin-left: 20px;
+        display: none;
+        transition: .2s ease-out;
+    }
+
+
+@media (min-width: 800px) {
+
+
+.site-header__btn {
+            display: block
+    }
+    }
+
+
+.site-header__btn:hover {
+        color: #edac15;
+    }
 
 
 .site-header__x {
@@ -300,12 +367,18 @@ h2 {
 
 
 @media (min-width: 800px) {
+
+
+.primary-nav {
+        background-color: #171717
+
+}
     }
 
 
 .primary-nav a {
         color: #fff;
-        font-weight: 100;
+        font-weight: 400;
         font-size: 1.3rem;
         transition: color .2s ease-out;
         text-transform: uppercase;
@@ -316,9 +389,7 @@ h2 {
 
 
 .primary-nav a {
-            font-size: 15px;
-            color: #999999;
-            text-transform: none
+            font-size: 14px
     }
     }
 
@@ -344,6 +415,7 @@ h2 {
             padding: 1.3rem 0 .3rem;
             border-bottom: 1px #fff solid;
             width: 100%;
+            position: relative;
         }
 
 
@@ -353,7 +425,7 @@ h2 {
 .primary-nav__list li {
                 border: none;
                 width: auto;
-                padding: 1rem 0
+                padding: .3rem 0
         }
     }
 
@@ -365,9 +437,53 @@ h2 {
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: flex-end;
-            width: auto;
-            margin-top: 0
+            justify-content: space-around;
+            width: 70%;
+            margin-top: 0;
+            margin: 0 auto
+    }
+    }
+
+
+.primary-nav__dropdown {
+        background-color: #171717;
+        position: absolute;
+        color: #fff;
+        left: 0;
+        top: 100%;
+        list-style: none;
+        display: none;
+        transition: .5s ease-out;
+        white-space: nowrap;
+    }
+
+
+.primary-nav__dropdown li {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            display: block;
+        }
+
+
+.primary-nav__dropdown li:last-child {
+            padding-bottom: 8px;
+        }
+
+
+.primary-nav__dropdown a {
+            padding: 0 10px;
+            display: block;
+            width: 100%;
+        }
+
+
+@media (min-width: 800px) {
+
+
+.primary-nav ul li:hover > ul,
+    .primary-nav ul li ul:hover {
+            display: block
     }
     }
 
@@ -958,6 +1074,14 @@ h2 {
 
 .btn__orange {
         background-color: #edac15;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+
+
+.btn__blue {
+        background-color: #2B65AE;
         border-radius: 3px;
         color: white;
         cursor: pointer;
