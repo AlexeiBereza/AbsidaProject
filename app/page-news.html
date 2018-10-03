@@ -18,30 +18,44 @@
             <div class="site-logo">
                 <a href="./index.html"><img src="images/absida-logo-narrow.jpg" class="site-logo__img"></a>
             </div>
-            
+
             <div class="site-header__mobile-widget">
                 <div class="site-header__mobile-widget-box">
                     <ul>
                         <li><i class="fas fa-phone"></i><p>8-800-333-44-55</p></li>
                     </ul>
                 </div>
-                <div class="site-header__mobile-widget-box">
+                <div class="site-header__mobile-widget-box site-header__mobile-widget--invisible-medium">
                     <ul>
                         <li><i class="fas fa-envelope"></i><p>absida@company.com</p></li>
                     </ul>
                 </div>
+                <div class="site-header__mobile-widget-box">
+                    <ul>
+                        <li><i class="fas fa-clock"></i><p>Пн - Пт: 9:00 - 18:00</p></li>
+                    </ul>
+                </div>
             </div>
-    
-            <nav class="primary-nav">
-                <ul class="primary-nav__list">
-                    <li class="primary-nav__item"><a href="./index.html">Главная</i></a></li>
-                    <li class="primary-nav__item"><a href="./page-about.html">О нас</a></li>
-                    <li class="primary-nav__item"><a href="./page-news.html">Новости</a></li>
-                    <li class="primary-nav__item"><a href="./page-service.html">Услуги</a></li>
-                    <li class="primary-nav__item"><a href="./page-contact.html">Контакты</a></li>
-                </ul>
-            </nav>
+            <a href="./page-contact.html" class="btn btn__blue site-header__btn">Обратная связь</a>
+
         </div>
+        <nav class="primary-nav">
+            <ul class="primary-nav__list">
+                <li class="primary-nav__item"><a href="./index.html">Главная</i></a></li>
+                <li class="primary-nav__item"><a href="./page-about.html">О нас</a>
+                    <ul class="primary-nav__dropdown">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </li>
+                <li class="primary-nav__item"><a href="./page-news.html">Новости</a></li>
+                <li class="primary-nav__item"><a href="./page-service.html">Услуги</a></li>
+                <li class="primary-nav__item"><a href="./page-contact.html">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
 
@@ -71,7 +85,9 @@
             <div class="wrapper page-section__flex">
                 <div class="news-page__container">
                     <div class="news-page__box news-page__box-highlight">
-                        <a href="./single-news.html"><img class="news-page__img-highlight" src="images/kerch-most1.jpg" alt=""></a>
+                        <div class="news-page__box-thumbnail">
+                            <a href="./single-news.html"><img class="news-page__img-highlight" src="images/kerch-most1.jpg" alt=""></a>
+                        </div>
                         <div class="news-page__box-content">
                             <span class="news-page__box-content-date">14.05.2018</span>
                             <h2 class="news-page__title-highlight"><a href="./single-news.html">Керченский Мост построен!</a></h2>
@@ -79,7 +95,9 @@
                         </div>
                     </div>
                     <div class="news-page__box news-page__box-highlight">
-                        <a href="./single-news.html"><img class="news-page__img-highlight" src="images/bridge-avarage2.jpeg" alt=""></a>
+                        <div class="news-page__box-thumbnail">
+                            <a href="./single-news.html"><img class="news-page__img-highlight" src="images/bridge-avarage2.jpeg" alt=""></a>
+                        </div>
                         <div class="news-page__box-content">
                             <span class="news-page__box-content-date">14.05.2018</span>
                             <h2 class="news-page__title-highlight"><a href="./single-news.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h2>
@@ -87,7 +105,9 @@
                         </div>
                     </div>
                     <div class="news-page__box news-page__box-highlight">
-                        <a href="./single-news.html"><img class="news-page__img-highlight" src="images/pexels-photo-210364.jpeg" alt=""></a>
+                        <div class="news-page__box-thumbnail">
+                            <a href="./single-news.html"><img class="news-page__img-highlight" src="images/pexels-photo-210364.jpeg" alt=""></a>
+                        </div>
                         <div class="news-page__box-content">
                             <span class="news-page__box-content-date">14.05.2018</span>
                             <h2 class="news-page__title-highlight"><a href="./single-news.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h2>

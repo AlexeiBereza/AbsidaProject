@@ -110,7 +110,7 @@
             
         }
         @mixin atLarge {
-            width: 75%;
+            width: 78%;
         }
     }
 
@@ -146,16 +146,16 @@
 
         }
         @mixin atLarge {
-            flex-basis: 32%;
+            flex-basis: 33%;
 
         }
 
         h3 {
-            font-size: 15px;
+            font-size: 14px;
         }
 
         p {
-            font-size: 14px;
+            font-size: 13px;
         }
         
     }

@@ -26,7 +26,6 @@ header {
     width: 350px;
     transition: .5s ease-out;
     left: -350px;
-    z-index: 10;
 }
 
 
@@ -753,7 +752,7 @@ h2 {
 
 
 .page-section__large-margin {
-            margin: 3rem 0
+            margin: 1.7rem 0
         
 
     }
@@ -896,7 +895,8 @@ h2 {
 
 
 .news-box h2 {
-        margin-bottom: 1.5rem;
+        margin-bottom: .5rem;
+        font-size: 16px;
     }
 
 
@@ -916,43 +916,45 @@ h2 {
         line-height: 1.4;
         color: #727171;
         margin-bottom: 1.5rem;
-    }
-
-
-.news-box img {
-        width: 100%;
-        height: 300px;
-        -o-object-fit: cover;
-           object-fit: cover;
-        -o-object-position: center;
-           object-position: center;
-        border-bottom: 4px solid #edac15;
-    }
-
-
-@media (min-width: 1130px) {
-
-
-.news-box img {
-            height: 190px
-    }
+        font-size: 15px;
     }
 
 
 .news-box__img {
         position: relative;
+        border-bottom: 5px solid #edac15;
+    }
+
+
+.news-box__img img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            -o-object-fit: cover;
+               object-fit: cover;
+            -o-object-position: center;
+               object-position: center;
+        }
+
+
+@media (min-width: 1130px) {
+
+
+.news-box__img img {
+                height: 190px
+        }
     }
 
 
 .news-box__date {
         display: inline-block;
         background-color: #edac15;
-        border-radius: 3px;
+        border-radius: 0 0 3px 3px;
         color: white;
-        padding: 6px;
+        padding: 2px 6px;
         position: absolute;
         left: 25px;
-        bottom: -10px;
+        top: calc(100% + 1px);
     }
 
 
@@ -1042,7 +1044,7 @@ h2 {
 
 
 .news-feed__title {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.3rem;
         padding-bottom: 10px;
         color: black;
@@ -1056,6 +1058,7 @@ h2 {
 
 .news-feed__date {
         color: #727171;
+        font-size: 14px;
     }
 
 
@@ -1362,8 +1365,8 @@ h2 {
 
 
 .news-page h2 {
-            font-size: 2rem;
-            margin: .3rem 0 1.5rem 0
+            font-size: 1.5rem;
+            margin: .3rem 0 .5rem 0
     }
     }
 
@@ -1381,13 +1384,13 @@ h2 {
 
 .news-page p {
             font-size: 1rem;
-            margin: .6rem 0;
+            margin: 0 0 .6rem;
             line-height: 1.4
     }
     }
 
 
-.news-page span {
+.news-page__box-content-date {
         color: #727171;
         font-size: .7rem;
     }
@@ -1396,7 +1399,7 @@ h2 {
 @media (min-width: 800px) {
 
 
-.news-page span {
+.news-page__box-content-date {
             font-size: 1rem
     }
     }
@@ -1484,7 +1487,7 @@ h2 {
     }
 
 
-.news-page__box img {
+.news-page__box-thumbnail img {
             width: 100%;
             height: 200px;
             -o-object-fit: cover;
@@ -1497,7 +1500,7 @@ h2 {
 @media (min-width: 530px) {
 
 
-.news-page__box img {
+.news-page__box-thumbnail img {
                 height: 150px
         }
     }
@@ -1506,7 +1509,7 @@ h2 {
 @media (min-width: 800px) {
 
 
-.news-page__box img {
+.news-page__box-thumbnail img {
                 height: 350px
         }
     }
@@ -1522,19 +1525,26 @@ h2 {
 
 .news-page__box-single {
             flex: 0 0 100%
+
+        
     }
     }
 
 
-.news-page__box-single img {
+.news-page__thumbnail img {
             height: 200px;
+            width: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+            -o-object-position: center;
+               object-position: center;
         }
 
 
 @media (min-width: 530px) {
 
 
-.news-page__box-single img {
+.news-page__thumbnail img {
                 height: 350px
         }
     }
@@ -1733,7 +1743,7 @@ h2 {
 
 
 .about-page__team {
-            width: 75%
+            width: 78%
     }
     }
 
@@ -1790,19 +1800,19 @@ h2 {
 
 
 .about-page__team-plate {
-            flex-basis: 32%
+            flex-basis: 33%
         
     }
     }
 
 
 .about-page__team-plate h3 {
-            font-size: 15px;
+            font-size: 14px;
         }
 
 
 .about-page__team-plate p {
-            font-size: 14px;
+            font-size: 13px;
         }
 
 
@@ -2448,4 +2458,15 @@ h2 {
 .mobile-board__menu-icon {
             display: none
     }
+    }
+
+
+.generic-page p {
+        margin: .7rem 0;
+    }
+
+
+.generic-page ul {
+        list-style: disc;
+        margin-left: 18px;
     }

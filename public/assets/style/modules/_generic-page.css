@@ -1,0 +1,12 @@
+.generic-page {
+
+
+    p {
+        margin: .7rem 0;
+    }
+
+    ul {
+        list-style: disc;
+        margin-left: 18px;
+    }
+}
