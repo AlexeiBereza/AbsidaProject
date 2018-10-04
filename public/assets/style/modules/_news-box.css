@@ -72,11 +72,10 @@
     }
 
     &__content {
-        padding: 1rem 1rem;
+        padding: 2rem 1rem 1rem;
         text-align: justify;
 
         @mixin atMedium {
-            padding: 2rem 2rem;
 
         }
     }

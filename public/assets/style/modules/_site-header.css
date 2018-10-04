@@ -95,7 +95,7 @@
     &__btn {
         padding: 8px 10px;
         justify-self: flex-end;
-        margin-left: 20px;
+        margin-left: 40px;
         display: none;
         transition: .2s ease-out;
 
