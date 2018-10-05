@@ -65,4 +65,8 @@
         padding: .3rem .8rem .5rem;
 
     }
+
+    &__price {
+        font-weight: 700;
+    }
 }

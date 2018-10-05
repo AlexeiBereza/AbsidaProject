@@ -7,7 +7,7 @@
     z-index: 9;
 
     @mixin atMedium {
-        margin-top: 4rem;
+        margin-top: 6rem;
         height: 70vh;
         
     }
@@ -21,7 +21,7 @@
         height: 50vh;
         object-fit: cover;
         object-position: center;
-        opacity: .5;
+        opacity: .6;
         position: absolute;
         top: 0;
         left: 0;
@@ -64,13 +64,12 @@
         transition: .3s ease-out;
 
         @mixin atMedium {
-            position: relative;
-            width: 65%;
-            padding-top: 3rem;
+            width: 55%;
+            padding-top: .5rem;
             text-align: left;
-            left: 0;
-            top: 50%;
-            transform: translate(0, -50%);
+            left: 90%;
+            top: 25%;
+            transform: translate(-90%, -25%);
 
         }
         
@@ -85,7 +84,7 @@
     
             }
             @mixin atLarge {
-                font-size: 36px;
+                font-size: 33px;
     
             }
         }
